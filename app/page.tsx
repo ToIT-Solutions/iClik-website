@@ -232,14 +232,14 @@ export default function Home() {
           </div>
 
           {/* Desktop - Hero visual */}
-          <div className="hidden lg:block lg:w-1/2">
+          <div className="hidden lg:block lg:w-1/2 mx-auto">
             <div className="relative flex items-center justify-center">
               <div className="w-[500px] xl:w-[600px] h-[500px] xl:h-[600px] relative transition-all duration-700">
                 <Image
                   src={currentColor.imagePath}
                   alt={`iPhone 17 Pro Max in ${currentColor.name}`}
-                  fill
-                  className="object-contain drop-shadow-2xl"
+                  height={600}
+                  className="object-contain drop-shadow-2xl rounded-4xl"
                   priority
                 />
               </div>
@@ -253,8 +253,8 @@ export default function Home() {
             <Image
               src={currentColor.imagePath}
               alt={`iPhone 17 Pro Max in ${currentColor.name}`}
-              fill
-              className="object-contain drop-shadow-2xl"
+              height={600}
+              className="object-contain drop-shadow-2xl rounded-4xl"
               priority
             />
           </div>
