@@ -149,7 +149,7 @@ export default function Home() {
 
       {/* Hero Product - iPhone 17 Pro with color switching */}
       <section
-        className="h-screen relative overflow-hidden transition-colors duration-1000"
+        className="relative overflow-hidden transition-colors duration-1000 min-h-screen lg:min-h-[85vh] pt-28 lg:pt-32"
         style={{ backgroundColor: currentColor.hue }}
       >
         {/* Liquid glass effect overlay */}
@@ -163,14 +163,14 @@ export default function Home() {
 
         <div className="relative h-full max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col lg:flex-row lg:items-center z-10">
           {/* Left side - Text content */}
-          <div className="lg:w-1/2 pt-32 lg:pt-0">
-            <div className="mb-8">
+          <div className="lg:w-1/2 lg:pt-0">
+            <div className="mb-6 lg:mb-8">
               <span className="text-xs md:text-sm tracking-[0.2em] text-gray-500 font-medium">
                 NEW ARRIVAL
               </span>
             </div>
 
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[8rem] font-light tracking-[-0.03em] leading-[0.85] text-black max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-light tracking-[-0.02em] leading-[0.9] text-black max-w-2xl">
               iPhone
               <span
                 className="block lg:inline transition-colors duration-700"
@@ -184,7 +184,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-600 max-w-lg mt-6 lg:mt-8 font-light">
+            <p className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl text-gray-600 max-w-lg mt-4 lg:mt-6 font-light">
               <span
                 className="font-medium transition-colors duration-700"
                 style={{
@@ -199,8 +199,8 @@ export default function Home() {
             </p>
 
             {/* Color selector */}
-            <div className="mt-10 lg:mt-12">
-              <p className="text-sm text-gray-500 mb-4">Available in:</p>
+            <div className="mt-6 lg:mt-8">
+              <p className="text-sm text-gray-500 mb-3">Available in:</p>
               <div className="flex gap-4">
                 {Object.entries(colors).map(([key, color]) => (
                   <button
@@ -219,7 +219,7 @@ export default function Home() {
             </div>
 
             {/* CTA Links */}
-            <div className="flex gap-6 lg:gap-8 mt-6 lg:mt-16">
+            <div className="flex gap-4 lg:gap-6 mt-4 lg:mt-10">
               <button className="text-sm md:text-base text-black hover:text-gray-600 flex items-center gap-2 group">
                 Learn more
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -232,13 +232,13 @@ export default function Home() {
           </div>
 
           {/* Desktop - Hero visual */}
-          <div className="hidden lg:block lg:w-1/2 mx-auto">
+          <div className="hidden lg:block lg:w-1/2 mx-auto mt-8 lg:mt-0">
             <div className="relative flex items-center justify-center">
-              <div className="w-[500px] xl:w-[600px] h-[500px] xl:h-[600px] relative transition-all duration-700">
+              <div className="w-[400px] lg:w-[450px] xl:w-[500px] h-[400px] lg:h-[450px] xl:h-[500px] relative transition-all duration-700">
                 <Image
                   src={currentColor.imagePath}
                   alt={`iPhone 17 Pro Max in ${currentColor.name}`}
-                  height={600}
+                  height={500}
                   className="object-contain drop-shadow-2xl rounded-4xl"
                   priority
                 />
@@ -248,8 +248,8 @@ export default function Home() {
         </div>
 
         {/* Mobile - Image below text */}
-        <div className="lg:hidden absolute bottom-0 left-0 right-0 flex justify-center items-end h-1/2">
-          <div className="w-[280px] h-[320px] sm:w-[350px] sm:h-[400px] relative">
+        <div className="lg:hidden mt-6">
+          <div className="w-[280px] h-[320px] sm:w-[350px] sm:h-[400px] mx-auto relative">
             <Image
               src={currentColor.imagePath}
               alt={`iPhone 17 Pro Max in ${currentColor.name}`}
@@ -321,14 +321,14 @@ export default function Home() {
 
               {/* Product images - Improved layout */}
               <div className="mt-auto grid grid-cols-2 gap-3 sm:gap-4">
-                <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl sm:rounded-2xl p-4 flex items-center justify-center">
+                <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl sm:rounded-2xl p-2 flex items-center justify-center">
                   <Image
                     src={macbook}
                     alt='MacBook Pro'
                     className='w-full h-full object-contain'
                   />
                 </div>
-                <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl sm:rounded-2xl p-4 flex items-center justify-center">
+                <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-100 rounded-xl sm:rounded-2xl p-2 flex items-center justify-center">
                   <Image
                     src={macbook2}
                     alt='MacBook Pro'
