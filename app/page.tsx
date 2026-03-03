@@ -373,19 +373,8 @@ export default function Home() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-black mt-4 sm:mt-6">Beyond the product</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
-          {/* Trade-in Card */}
-          <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gray-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-              <RefreshCw className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
-            </div>
-            <h3 className="text-xl sm:text-2xl font-light text-black mb-2 sm:mb-3">Trade In</h3>
-            <p className="text-gray-600 text-xs sm:text-sm mb-4 sm:mb-6">Get credit toward a new purchase. Just answer a few questions about your device.</p>
-            <button className="text-xs sm:text-sm text-black hover:text-gray-600 flex items-center gap-1 sm:gap-2 group">
-              Get a quote
-              <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+
 
           {/* Repairs Card */}
           <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
