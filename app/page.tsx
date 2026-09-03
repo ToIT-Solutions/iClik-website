@@ -4,8 +4,8 @@
 import { useState, useEffect } from 'react'
 import { ArrowRight, Menu, X, MapPin, Phone, ChevronRight, RefreshCw, Wrench, Shield, Headphones, Watch, Smartphone, Laptop, Tablet, Gift, CreditCard, Truck } from 'lucide-react'
 import Image from 'next/image'
-import Logo from '@/public/iclik LogoNoBg.png'
-import LogoBlack from '@/public/iclik LogoNoBgBlack.png'
+import Logo from '@/public/logoWhite.png'
+import LogoBlack from '@/public/logoBlack.png'
 import cosmicOrange from '@/public/cosmicOrange.png'
 import deepBlue from '@/public/deepBlue.png'
 import silver from '@/public/silver.png'
@@ -449,9 +449,9 @@ export default function Home() {
                   <MapPin className="w-5 h-5 text-gray-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-sm md:text-base text-gray-300 leading-relaxed">
-                      Shop 14<br />
-                      Sam Levy's Village<br />
-                      Borrowdale Road<br />
+                      Shop 4<br />
+                      {/* Sam Levy's Village<br /> */}
+                      {/* Borrowdale Road<br /> */}
                       Harare
                     </p>
                   </div>
@@ -481,7 +481,7 @@ export default function Home() {
           </div>
           <div className="mt-20 md:mt-32 pt-8 border-t border-gray-800">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-              <p className="text-xs text-gray-500">© 2026 iClik. All rights reserved.</p>
+              <p className="text-xs text-gray-500">© 2026 Apple Store. All rights reserved.</p>
               <p className="text-xs text-gray-500">Apple and the Apple logo are trademarks of Apple Inc.</p>
             </div>
           </div>
